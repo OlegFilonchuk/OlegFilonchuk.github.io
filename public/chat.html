@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Chat App</title>
+</head>
+
+<body>
+  <main>
+    <div class="chat">
+      <div class="sidebar">
+        <h2 id="roomName"></h2>
+        <div id="userList"></div>
+      </div>
+
+      <div class="content">
+
+        <div id="messages">
+        </div>
+
+        <form id="messageForm">
+          <label for="messageInput">
+            <input type="text" name="message" id="messageInput" autofocus placeholder="Type your message"
+              autocomplete="off" required>
+          </label>
+
+          <button id="sendButton" type="submit">Send</button>
+          <button id="geolocation">Share geolocation</button>
+        </form>
+
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.3/qs.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/chat.js"></script>
+</body>
+
+</html>
